@@ -8,6 +8,12 @@ O texto dá a entender que a engenharia de software toma para si muito mais resp
 
 ## Java x Python
 
+Java é uma linguagem de programação robusta e muito boa na parte de requisições, enquanto o Python é muito eficiente na área de Inteligência Artificial e análise de dados.
+
 ## Windows x Linux
 
-##
+Linux é um sistema de programação muito mais leve, seguro e amigável com o desenvolvedor, enquanto o Windows é o SO que fornece uma boa base para atividades administrativas.
+
+## MySQL x PostgreSQL
+
+O PostgreSQL é completamente open source, enquanto o MySQL é mantido pela Oracle. O Postgres possui grande vantagem, pois sua utilização reduz custos.
