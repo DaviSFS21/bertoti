@@ -20,7 +20,7 @@ O PostgreSQL é completamente open source, enquanto o MySQL é mantido pela Orac
 
 # Diagrama de classes UML(API)
 
-![image](https://github.com/user-attachments/assets/c1d5ae88-6403-4392-9afd-db804bcbf046)
+![UML-Fraction](uml.png)
 
 # Testes unitários
 
