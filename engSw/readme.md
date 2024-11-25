@@ -25,3 +25,7 @@ O PostgreSQL é completamente open source, enquanto o MySQL é mantido pela Orac
 # Testes unitários
 
 Os códigos de teste unitário se encontram na pasta `src/`
+
+# Projeto de Bot com Inteligência Artificial
+
+## [DevBot - Github](https://github.com/DaviSFS21/DevBot)
