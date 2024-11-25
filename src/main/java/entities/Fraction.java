@@ -13,7 +13,7 @@ public class Fraction {
         this.den = 1;
     }
 
-    public String sum(Fraction fr1, Fraction fr2) {
+    public Fraction sum(Fraction fr1, Fraction fr2) {
         int LCM = FractionUtils.findLCM(fr1.den, fr2.den);
 
         int x = fr1.num * (LCM / fr1.den);
@@ -25,10 +25,10 @@ public class Fraction {
         this.num = numRes / GCD;
         this.den = LCM / GCD;
 
-        return this.toString();
+        return this;
     }
 
-    public String sub(Fraction fr1, Fraction fr2) {
+    public Fraction sub(Fraction fr1, Fraction fr2) {
         int LCM = FractionUtils.findLCM(fr1.den, fr2.den);
 
         int x = fr1.num * (LCM / fr1.den);
@@ -40,10 +40,10 @@ public class Fraction {
         this.num = numRes / GCD;
         this.den = LCM / GCD;
 
-        return this.toString();
+        return this;
     }
 
-    public String mult(Fraction fr1, Fraction fr2) {
+    public Fraction mult(Fraction fr1, Fraction fr2) {
         this.num = fr1.num * fr2.num;
         this.den = fr1.den * fr2.den;
 
@@ -52,10 +52,10 @@ public class Fraction {
         this.num /= GCD;
         this.den /= GCD;
 
-        return this.toString();
+        return this;
     }
 
-    public String div(Fraction fr1, Fraction fr2) {
+    public Fraction div(Fraction fr1, Fraction fr2) {
         this.num = fr1.num * fr2.den;
         this.den = fr1.den * fr2.num;
 
@@ -64,7 +64,7 @@ public class Fraction {
         this.num /= GCD;
         this.den /= GCD;
 
-        return this.toString();
+        return this;
     }
 
     @Override
