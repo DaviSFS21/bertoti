@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Cocoa Puffs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+    <div id="buttons">
+        <button id="list-button">Listagem</button>
+        <button id="create-button">Criação</button>
+        <button id="edit-button">Edição</button>
+        <button id="delete-button">Deleção</button>
+    </div>
+
+    <div id="list-tab" class="tab">
+        <h2>Listagem de Cocoa Puffs</h2>
+        <div id="list-content"></div>
+    </div>
+
+    <div id="create-tab" class="tab">
+        <h2>Criação de Cocoa Puff</h2>
+        <input type="text" id="create-name" placeholder="Nome">
+        <button id="create-submit">Criar Cocoa Puff</button>
+    </div>
+
+    <div id="edit-tab" class="tab">
+        <h2>Edição de Cocoa Puff</h2>
+        <select id="edit-select"></select>
+        <input type="text" id="edit-name" placeholder="Nome">
+        <button id="edit-submit">Confirmar Edição</button>
+    </div>
+
+    <div id="delete-tab" class="tab">
+        <h2>Deleção de Cocoa Puff</h2>
+        <select id="delete-select"></select>
+        <button id="delete-submit">Confirmar Deleção</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
