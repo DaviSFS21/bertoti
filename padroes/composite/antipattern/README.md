@@ -1,11 +1,11 @@
-## Diagrama de UML para o Composite
+## Diagrama UML para o Antipattern Composite
 
 ```mermaid
 classDiagram
     direction LR
 
     class Component {
-    <<interface>>
+        <<interface>>
         + showPrice()
         + showTotal(): double
     }

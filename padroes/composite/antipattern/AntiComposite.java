@@ -1,9 +1,9 @@
 import java.util.ArrayList;
-import java.util.List;
 
 interface Component {
     void showPrice();
     double showTotal();
+    void addComponent(Component component);
 }
 
 static class Leaf implements Component {
@@ -24,16 +24,22 @@ static class Leaf implements Component {
     public double showTotal() {
         return price;
     }
+
+    @Override
+    public void addComponent(Component component) {
+        throw new UnsupportedOperationException("Leaf nodes cannot contain components.");
+    }
 }
 
 static class GroupComposite implements Component {
     private final String name;
-    private final List<Component> components = new ArrayList<>();
+    private final java.util.List<Component> components = new ArrayList<>();
 
     public GroupComposite(String name) {
         this.name = name;
     }
 
+    @Override
     public void addComponent(Component component) {
         components.add(component);
     }
@@ -70,6 +76,6 @@ void main() {
     group2.addComponent(group1);
 
     group2.showPrice();
-    System.out.printf("Total Price: %.2f%n", group1.showTotal());
-    System.out.printf("Total Price: %.2f%n", group2.showTotal());
+    System.out.printf("Total Group 1: %.2f%n", group1.showTotal());
+    System.out.printf("Total Group 2: %.2f%n", group2.showTotal());
 }
