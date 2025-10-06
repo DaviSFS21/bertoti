@@ -11,7 +11,6 @@ class Component {
     + addComponent(component)
 }
 
-%% Leaf Class (FAT LEAF)
 class Leaf {
     - String name
     - double price
