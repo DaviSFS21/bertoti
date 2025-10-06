@@ -1,24 +1,24 @@
 package racecar;
 
-enum TyreType {
+enum TireType {
     SOFT,
     MEDIUM,
     HARD
 }
 interface Strategy {
-    int execute(TyreType tyre);
+    int execute(TireType tyre);
 }
 
 class AggressiveStrategy implements Strategy {
     @Override
-    public int execute(TyreType tyre) {
+    public int execute(TireType tyre) {
         int baseLapForecast = 30;
 
-        if (tyre == TyreType.SOFT) {
+        if (tyre == TireType.SOFT) {
             baseLapForecast -= 20;
-        } else if (tyre == TyreType.MEDIUM) {
+        } else if (tyre == TireType.MEDIUM) {
             baseLapForecast -= 10;
-        } else if (tyre == TyreType.HARD) {
+        } else if (tyre == TireType.HARD) {
             baseLapForecast += 0;
         }
 
@@ -28,14 +28,14 @@ class AggressiveStrategy implements Strategy {
 
 class AverageStrategy implements Strategy {
     @Override
-    public int execute(TyreType tyre) {
+    public int execute(TireType tyre) {
         int baseLapForecast = 30;
 
-        if (tyre == TyreType.SOFT) {
+        if (tyre == TireType.SOFT) {
             baseLapForecast -= 10;
-        } else if (tyre == TyreType.MEDIUM) {
+        } else if (tyre == TireType.MEDIUM) {
             baseLapForecast += 0;
-        } else if (tyre == TyreType.HARD) {
+        } else if (tyre == TireType.HARD) {
             baseLapForecast += 10;
         }
 
@@ -45,14 +45,14 @@ class AverageStrategy implements Strategy {
 
 class DefensiveStrategy implements Strategy {
     @Override
-    public int execute(TyreType tyre) {
+    public int execute(TireType tyre) {
         int baseLapForecast = 30;
 
-        if (tyre == TyreType.SOFT) {
+        if (tyre == TireType.SOFT) {
             baseLapForecast -= 5;
-        } else if (tyre == TyreType.MEDIUM) {
+        } else if (tyre == TireType.MEDIUM) {
             baseLapForecast += 5;
-        } else if (tyre == TyreType.HARD) {
+        } else if (tyre == TireType.HARD) {
             baseLapForecast += 15;
         }
 
@@ -72,7 +72,7 @@ public class LapForecast {
         }
     }
 
-    public double executeStrategy(TyreType tyre, int fuelLoad) {
+    public double executeStrategy(TireType tyre, int fuelLoad) {
         return strategy.execute(tyre);
     }
 }
