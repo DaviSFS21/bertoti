@@ -1,8 +1,8 @@
-package racecar;
+package br.com.davisoares;
 
-import racecar.observer.*;
-import racecar.strategy.*;
-import racecar.composite.*;
+import br.com.davisoares.observer.*;
+import br.com.davisoares.strategy.*;
+import br.com.davisoares.composite.*;
 
 public class RaceCarDemo {
     public static void main(String[] args) {
@@ -22,7 +22,6 @@ public class RaceCarDemo {
 
         TelemetrySubject telemetrySubject = getTelemetrySubject();
 
-        // Simulate telemetry updates
         telemetrySubject.setTelemetryData("Engine RPM: 12,500 | Speed: 320 km/h | Fuel: 45L");
         System.out.println();
         telemetrySubject.setTelemetryData("Tire Temperature: Front 85°C, Rear 90°C | Brake Temp: 650°C");

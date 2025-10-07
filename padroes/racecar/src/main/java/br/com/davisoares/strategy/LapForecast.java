@@ -1,4 +1,4 @@
-package racecar.strategy;
+package br.com.davisoares.strategy;
 
 public class LapForecast {
     private final Strategy strategy;

@@ -23,5 +23,5 @@ classDiagram
     }
     
     NewsSubscriber ..|> Subscriber : implements
-    NewsPublisher "1" o-- "*" Subscriber : notifies
+    NewsPublisher "1" o--|> "*" Subscriber : notifies
 ```

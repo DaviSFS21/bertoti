@@ -1,4 +1,4 @@
-package racecar.strategy;
+package br.com.davisoares.strategy;
 
 public class AggressiveStrategy implements Strategy {
     @Override

@@ -1,4 +1,4 @@
-package racecar.composite;
+package br.com.davisoares.composite;
 
 public interface CarComponent {
     String getName();

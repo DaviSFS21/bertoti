@@ -1,4 +1,4 @@
-package racecar.observer;
+package br.com.davisoares.observer;
 
 public class DriverDisplay implements TelemetryMonitor {
     private final String driverName;

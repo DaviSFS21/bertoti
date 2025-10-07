@@ -24,6 +24,6 @@ classDiagram
     
     OperationAdd ..|> CalculatorStrategy : implements
     OperationSubtract ..|> CalculatorStrategy : implements
-    Calculator o-- CalculatorStrategy : has a
+    Calculator *--|> CalculatorStrategy : has a
 ```
 

@@ -1,4 +1,4 @@
-package racecar.composite;
+package br.com.davisoares.composite;
 
 public class Component implements CarComponent {
     private final String name;

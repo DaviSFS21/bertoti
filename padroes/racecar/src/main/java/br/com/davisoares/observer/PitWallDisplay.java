@@ -1,4 +1,4 @@
-package racecar.observer;
+package br.com.davisoares.observer;
 
 public class PitWallDisplay implements TelemetryMonitor {
     private final String displayId;
