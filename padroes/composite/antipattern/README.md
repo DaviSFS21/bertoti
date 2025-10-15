@@ -4,33 +4,21 @@
 classDiagram
     direction LR
 
-class Component {
-    <<interface>>
-    + showPrice()
-    + showTotal(): double
-    + addComponent(component)
-}
+    class Movie {
+        - title : String
+        +Movie(title : String)
+        +getTitle() : String
+    }
 
-class Leaf {
-    - String name
-    - double price
-    + Leaf(name, price)
-    + showPrice()
-    + showTotal(): double
-    + addComponent(component)
-}
+    class Section {
+        - items : List<Object>
+        +addItem(item : Object) : void
+        +displayItems() : void
+        +addItem(item : Object) : void
+        +displayItems() : void
+    }
 
-class GroupComposite {
-    - String name
-    - List~Component~ components
-    + GroupComposite(name)
-    + addComponent(component)
-    + showPrice()
-    + showTotal(): double
-}
-
-Leaf ..|> Component : implements (Violates ISP)
-GroupComposite ..|> Component : implements
-
-GroupComposite "1" *-- "*" Component : contains
+Section ..o Object : contains
+Section ..> Movie : uses
+Section ..> Section : uses
 ```

@@ -30,5 +30,5 @@ classDiagram
     Leaf ..|> Component : implements
     GroupComposite ..|> Component : implements
     
-    GroupComposite "1" *--|> "*" Component : contains
+    GroupComposite o-- "1..*" Component : contains
 ```
