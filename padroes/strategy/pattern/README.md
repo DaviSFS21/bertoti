@@ -22,8 +22,8 @@ classDiagram
         + execute(num1, num2): int
     }
     
-    OperationAdd ..|> CalculatorStrategy : implements
-    OperationSubtract ..|> CalculatorStrategy : implements
-    Calculator *--|> CalculatorStrategy : has a
+    OperationAdd ..> CalculatorStrategy : implements
+    OperationSubtract ..> CalculatorStrategy : implements
+    Calculator *--> CalculatorStrategy : has a
 ```
 

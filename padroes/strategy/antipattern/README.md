@@ -4,12 +4,6 @@
 classDiagram
     direction LR
 
-    class Operation {
-        <<enum>>
-        ADD
-        SUBTRACT
-    }
-
     class AntiPatternCalculator {
         + execute(operation: Operation, num1: int, num2: int): int
     }
